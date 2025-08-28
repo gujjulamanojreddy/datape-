@@ -1,0 +1,1 @@
+import Link from "next/link"; export default function Shop(){ return(<main className="max-w-3xl mx-auto p-6"><Link href="/" className="text-indigo-600">← Back to Home</Link><h1 className="text-3xl font-bold mt-4 mb-2">Shop</h1><p>Coming soon. Explore DataPe plans and add-ons.</p></main>);}
