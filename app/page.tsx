@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { WaitlistButton } from "../components/waitlist-button";
 
 export default function Page() {
   return (
@@ -16,9 +17,10 @@ export default function Page() {
             <span className="block">or even with your voice and get instant insights</span>
           </p>
           <div className="flex">
-            <a href="#" className="mx-auto inline-block bg-white text-indigo-600 px-6 py-3 rounded-2xl shadow-lg font-semibold hover:bg-gray-100">
-              🚀 Try DataPe Now
-            </a>
+            <WaitlistButton
+              label="🚀 Try DataPe Now"
+              className="mx-auto inline-block bg-white text-indigo-600 px-6 py-3 rounded-2xl shadow-lg font-semibold hover:bg-gray-100"
+            />
           </div>
         </div>
       </section>
@@ -43,6 +45,26 @@ export default function Page() {
           <img src="/icons/history.svg" alt="Review Conversation History" className="mx-auto mb-4 w-16" />
           <h3 className="font-bold text-lg mb-2">Review Conversation History</h3>
           <p>Access your past queries anytime—pick up where you left off.</p>
+        </div>
+      </section>
+
+      <section className="py-20 px-8 bg-white">
+        <h2 className="text-3xl font-bold text-center mb-4">See DataPe in Action</h2>
+        <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-10">
+          Watch how easily you can upload a spreadsheet and ask questions in plain English or with your voice. DataPe instantly turns rows and columns into clear, actionable insights.
+        </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="relative w-full rounded-2xl shadow overflow-hidden bg-black">
+            <div className="pt-[56.25%]"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center">
+                <div className="mx-auto mb-4 h-14 w-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
+                  <div className="ml-1 h-0 w-0 border-y-[10px] border-y-transparent border-l-[16px] border-l-white"></div>
+                </div>
+                <p className="text-white/80">Add your demo video (MP4 / YouTube / Vimeo)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -118,9 +140,10 @@ export default function Page() {
         <h2 className="text-4xl font-bold mb-6">
           Stop Wrestling with Spreadsheets Start Conversing with Them
         </h2>
-        <a href="#" className="inline-block bg-white text-indigo-600 px-6 py-3 rounded-2xl shadow-lg font-semibold hover:bg-gray-100">
-          🚀 Get Started with DataPe
-        </a>
+        <WaitlistButton
+          label="🚀 Get Started with DataPe"
+          className="inline-block bg-white text-indigo-600 px-6 py-3 rounded-2xl shadow-lg font-semibold hover:bg-gray-100"
+        />
       </section>
 
       

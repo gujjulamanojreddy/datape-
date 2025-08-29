@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							<span className="text-xl font-bold">DataPe</span>
 						</Link>
 						<nav className="flex items-center gap-6 text-sm font-medium">
+							<Link href="/login" className="hover:text-indigo-600">Login</Link>
 							<Link href="/#home" className="hover:text-indigo-600">Home</Link>
 							<Link href="/contact" className="hover:text-indigo-600">Contact Us</Link>
 						</nav>
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<div>
 							<h4 className="font-semibold mb-3">Links</h4>
 							<ul className="space-y-2 text-sm">
+								<li><a href="/login" className="hover:text-indigo-600">Login</a></li>
 								<li><a href="/#home" className="hover:text-indigo-600">Home</a></li>
 								<li><a href="/contact" className="hover:text-indigo-600">Contact Us</a></li>
 							</ul>
